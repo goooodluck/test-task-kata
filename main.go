@@ -76,8 +76,8 @@ func validateInput(aStr, bStr string) (int, int, bool) {
  arabB, errB := strconv.Atoi(bStr)
 
  if errA == nil && errB == nil {
-  if arabA < 1 || arabA > 9 || arabB < 1 || arabB > 9 {
-   panic("Числа должны быть от 1 до 9.")
+  if arabA < 1 || arabA > 10 || arabB < 1 || arabB > 10 {
+   panic("Выдача паники, так как числа должны быть от 1 до 10.")
   }
   return arabA, arabB, true
  }
